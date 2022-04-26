@@ -34,7 +34,7 @@ describe('Respuesta de ExplorerService', () => {
         expect(Cant).toBe(7)
     });
     test('3-Devuelve el Usuario de los Explorers con la misma mission', () => {
-        const UserList=ExplorerService.getExplorersUsernameByMission(Explorers,'Node')
+        const UserList=ExplorerService.getExplorersUsernamesByMission(Explorers,'Node')
         const List=['User1','User3','User4','User6','User7','User9','User10']
         
         expect(UserList.length).toBe(7)
